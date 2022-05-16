@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* ::-webkit-scrollbar {
+  width: 10px;
+} */
+
+/* ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+} */
+/* 
+::-webkit-scrollbar-thumb {
+  background: rgba(109, 84, 199, 0.5);
+} */
+
+/* ::-webkit-scrollbar-thumb:hover {
+  @apply bg-customPurple;
+} */
+
+h1,h2,h3,h4,h5,a, li {
+  font-family: "Poppins", sans-serif;
+}
+
+p,
+h6 {
+  font-family: "Baloo 2", cursive;
+}
+
+.top-nav.active {
+  @apply border-b-2 border-b-customPurple  pb-1;
+}
+
+.side-nav.active {
+  @apply text-customPurple;
+}
+
+.active-tab{
+  color: #fff; 
+  background-color: red !important;
+}
+
+.navbar {
+  z-index: 20;
+}
+.navbar.fixed {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: top 0.2s;
+  width: 100%;
+  top: -80px;
+}
+
+
+
+@media screen and (max-width: 786px) {
+  .animate-clip {
+    text-align: center;
+  }
+  #name {
+    text-align: center;
+    margin-top: 30px !important;
+  }
+  .intro-text {
+    text-align: center;
+    margin: 0 auto;
+  }
+  #greeting {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
+
+#home{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      62deg,
+      rgba(46, 24, 106, 0.7) 20%,
+      rgba(249, 87, 0, 0.8) 80%
+    ),
+    url("../img/3.jpg");
+}
+
+#greeting {
+  position: relative;
+  width: fit-content;
+  font-family: poppins;
+  font-weight: 500;
+  background-color: #fff;
+  padding: 8px 15px;
+  border-radius: 7px;
+  box-shadow: rgba(17, 17, 26, 0.4) 2px 2px 2px;
+}
+
+#greeting::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 100%;
+  left: 1.5em;
+  transform: rotate(180deg);
+  border: 0.65rem solid transparent;
+  border-bottom-color: #fff;
+}
+
+#name {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+#clip-effect {
+  color: #fff;
+  font-family: "Baloo 2", cursive;
+  font-weight: 400 !important;
+}
+.intro-text {
+  color: #fff;
+}
