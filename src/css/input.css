@@ -17,12 +17,12 @@
   @apply bg-customPurple;
 } */
 
-h1,h2,h3,h4,h5,a, li {
+h1,h2,h3,h4,h5,a, #myTab li {
   font-family: "Poppins", sans-serif;
 }
 
 p,
-h6 {
+h6, li {
   font-family: "Baloo 2", cursive;
 }
 
@@ -126,6 +126,8 @@ h6 {
 }
 #aboutImg{
   height: 80vh;
-  background-position: top;  
+  background-size: cover;
+  border-radius: 10px;
+  /* background-position: center;   */
   background-image: url("../img/african-man-black-suit.jpg");
 }
