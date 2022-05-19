@@ -70,6 +70,11 @@ h6 {
   }
 }
 
+@media screen and (min-width: 992px) {
+  #home{
+    height: 80vh;
+  }
+}
 
 #home{
   background-repeat: no-repeat;
@@ -118,4 +123,9 @@ h6 {
 }
 .intro-text {
   color: #fff;
+}
+#aboutImg{
+  height: 80vh;
+  background-position: top;  
+  background-image: url("../img/african-man-black-suit.jpg");
 }
