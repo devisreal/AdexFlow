@@ -27,11 +27,19 @@ h6, li {
 }
 
 .top-nav.active {
-  @apply border-b-2 border-b-customPurple  pb-1;
+  @apply border-b-2 border-b-customPurple  pb-1 text-customPurple;
+}
+
+.top-nav.active i{
+  @apply text-customPurple 
 }
 
 .side-nav.active {
   @apply text-customPurple;
+  font-weight: 600 !important;
+}
+.side-nav i{
+  font-size: 20px;
 }
 
 .active-tab{
@@ -72,7 +80,7 @@ h6, li {
 
 @media screen and (min-width: 992px) {
   #home{
-    height: 80vh;
+    height: 75vh;
   }
 }
 
@@ -130,4 +138,10 @@ h6, li {
   border-radius: 10px;
   /* background-position: center;   */
   background-image: url("../img/african-man-black-suit.jpg");
+}
+
+@media screen and (max-width:992px) {
+  #aboutImg{
+    @apply mx-auto
+  }
 }
