@@ -42,11 +42,6 @@ h6, li {
   font-size: 20px;
 }
 
-.active-tab{
-  color: #fff; 
-  background-color: red !important;
-}
-
 .navbar {
   z-index: 20;
 }
