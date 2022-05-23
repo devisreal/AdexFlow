@@ -19,7 +19,12 @@ $(document).ready(function () {
   $("#close-menu").click(function () {
     $("#offcanvas").hide();
   });
+  $(".side-nav").click(function(){
+    $("#offcanvas").hide();
+  });
 });
+
+
 
 $(function () {
   $(".animate-clip").animatedHeadline({
