@@ -34,6 +34,8 @@
     />
     <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!-- BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.4/dist/flowbite.min.css" /> -->
   </head>
 
@@ -406,72 +408,43 @@
                   <ul class="font-medium text-gray-900 mt-3">
                     <li
                       class="w-full px-4 py-2 border-b border-gray-200 rounded-t-lg"
-                    >
-                      <i
-                        class="fas fa-long-arrow-alt-right text-customPurple"
-                      ></i>
-                      HTML / CSS
+                    ><i class='bx bxl-html5 text-customPurple bx-fw'></i>HTML / CSS
                     </li>
                     <li class="w-full px-4 py-2 border-b border-gray-200">
-                      <i
-                        class="fas fa-long-arrow-alt-right text-customPurple"
-                      ></i>
-                      JavaScript
+                      <i class='bx bxl-javascript text-customPurple bx-fw'></i> JavaScript
                     </li>
                     <li class="w-full px-4 py-2 border-b border-gray-200">
-                      <i
-                        class="fas fa-long-arrow-alt-right text-customPurple"
-                      ></i>
-                      Bootstrap
+                      <i class='bx bxl-bootstrap text-customPurple bx-fw'></i> Bootstrap
                     </li>
                     <li class="w-full px-4 py-2 border-b border-gray-200">
-                      <i
-                        class="fas fa-long-arrow-alt-right text-customPurple"
-                      ></i>
-                      Wordpress
+                      <i class='bx bxl-wordpress text-customPurple bx-fw'></i> Wordpress
                     </li>
                     <li class="w-full px-4 py-2">
-                      <i
-                        class="fas fa-long-arrow-alt-right text-customPurple"
-                      ></i>
-                      C#
+                      <i class='bx bx-code text-customPurple bx-fw'></i> C#
                     </li>
                   </ul>
                 </div>
-                <div class=" ">
+                <div class="">
                   <ul class="font-medium text-gray-900 mt-3">
                     <li class="w-full px-4 py-2 border-b border-gray-200">
-                      <i
-                        class="fas fa-long-arrow-alt-right text-customPurple"
-                      ></i>
-                      Java
+                      <i class='bx bxl-java text-customPurple bx-fw '></i> Java
                     </li>
                     <li class="w-full px-4 py-2 border-b border-gray-200">
-                      <i
-                        class="fas fa-long-arrow-alt-right text-customPurple"
-                      ></i>
-                      Python
+                      <i class='bx bxl-python text-customPurple bx-fw'></i> Python
                     </li>
                     <li class="w-full px-4 py-2 border-b border-gray-200">
-                      <i
-                        class="fas fa-long-arrow-alt-right text-customPurple"
-                      ></i>
-                      Django
+                      <i class='bx bxl-django text-customPurple bx-fw'></i> Django
                     </li>
                     <li class="w-full px-4 py-2 border-b border-gray-200">
-                      <i
-                        class="fas fa-long-arrow-alt-right text-customPurple"
-                      ></i>
-                      Flutter
+                      <i class='bx bxl-flutter text-customPurple bx-fw'></i> Flutter
                     </li>
                     <li
                       class="w-full px-4 py-2 rounded-b-lg d-fex justify-between"
                     >
                       <i
-                        class="fas fa-long-arrow-alt-right text-customPurple"
+                        class="fas fa-database place-self-end text-customPurple"
                       ></i>
                       SQL
-                      <i class="fas fa-database place-self-end"></i>
                     </li>
                   </ul>
                 </div>
@@ -807,16 +780,32 @@
 
     <!-- ========== Start Jumbotron Section ====== -->
 
-    <article id="jumbotron" class="mt-24 py-10 bg-gray-700">      
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-10/12 mx-auto">
-        <div class="bg-white h-12  w-full md:col-span-2 text-center md:text-left">01</div>
+    <section id="jumbotron" class="mt-24 py-12 md:py-10 bg-gray-700">
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 w-10/12 mx-auto"
+      >
+        <div class="text-white w-full md:col-span-2 text-center md:text-left">
+          <h1 class="text-2xl md:w-10/12">
+            Have any works you want done by me?
+          </h1>
+          <p class="mt-3 text-md md:w-8/12">
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts.
+          </p>
+        </div>
         <!-- ... -->
-        <div class="bg-white h-12  w-full text-center md:text-left">09</div>
-      </div>      
-    </article>
+        <div class="w-full md:py-8 text-center">
+          <a
+            class="px-5 py-2 text-sm w-auto ml-auto font-medium text-customOrange bg-white hover:text-white hover:bg-customOrange transition duration-150 ease-in-out rounded-lg focus:ring-2 focus:outline-none focus:ring-orange-600"
+            href=""
+          >
+            Contact Me
+          </a>
+        </div>
+      </div>
+    </section>
 
     <!-- ==========End Jumbrotron Section ======== -->
-
 
     <!-- ========== Start Portfolio Section ======= -->
 
@@ -828,15 +817,9 @@
         <p class="capitalize text-lg">My Latest Work</p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-gray-50 p-5 text-center rounded-lg shadow">
-          
-        </div>
-        <div class="bg-gray-50 p-5 text-center rounded-lg shadow">
-          
-        </div>
-        <div class="bg-gray-50 p-5 text-center rounded-lg shadow">
-          
-        </div>
+        <div class="bg-gray-50 p-5 text-center rounded-lg shadow"></div>
+        <div class="bg-gray-50 p-5 text-center rounded-lg shadow"></div>
+        <div class="bg-gray-50 p-5 text-center rounded-lg shadow"></div>
       </div>
     </section>
 
