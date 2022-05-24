@@ -19,12 +19,10 @@ $(document).ready(function () {
   $("#close-menu").click(function () {
     $("#offcanvas").hide();
   });
-  $(".side-nav").click(function(){
+  $(".side-nav").click(() => {
     $("#offcanvas").hide();
   });
 });
-
-
 
 $(function () {
   $(".animate-clip").animatedHeadline({
@@ -36,7 +34,5 @@ let startYear = 2017;
 let currentYear = new Date().getFullYear();
 let yearDifference = currentYear - startYear;
 
-var years = document.getElementById('years')
-years.innerHTML = yearDifference
-
-
+var years = document.getElementById("years");
+years.innerHTML = yearDifference;

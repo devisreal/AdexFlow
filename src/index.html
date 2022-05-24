@@ -1,570 +1,857 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <title>AdexFlow</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind Compiled CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Jquery Animated Headlines -->
+    <link rel="stylesheet" href="css/jquery.animatedheadline.css" />
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.4/dist/flowbite.min.css" /> -->
+  </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-   <!-- Favicon -->
-   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-   <title>AdexFlow</title>
-   <!-- Font Awesome -->
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-   <!-- Google Font -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet">
-   <!-- Tailwind Compiled CSS -->
-   <link rel="stylesheet" href="css/main.css">
-   <!-- Jquery Animated Headlines -->
-   <link rel="stylesheet" href="css/jquery.animatedheadline.css">
-   <!-- Animate CSS -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-   <!-- Scroll Reveal -->
-   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-   <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.4/dist/flowbite.min.css" /> -->
-</head>
+  <body class="">
+    <!-- ========== Start Navbar ========== -->
+    <header class="navbar fixed" id="scroll-nav">
+      <div class="max-w-screen-xl p-4 mx-auto bg-white">
+        <div class="flex items-center justify-between space-x-4 lg:space-x-10">
+          <div class="flex lg:w-0 md:flex-1">
+            <span class="w-20 h-10 bg-gray-200 rounded-lg"></span>
+          </div>
+          <nav class="hidden space-x-8 text-sm font-medium md:flex">
+            <a class="text-gray-600 top-nav active" href="#home">
+              <i class="fas fa-home"></i>
+              Home
+            </a>
+            <a class="text-gray-600 top-nav" href="#about">
+              <i class="fas fa-user-circle"></i>
+              About
+            </a>
+            <a class="text-gray-600 top-nav" href="#services">
+              <i class="fas fa-cog"></i>
+              Services
+            </a>
+            <a class="text-gray-600 top-nav" href="#portfolio">
+              <i class="fas fa-briefcase"></i>
+              Portfolio
+            </a>
+            <a class="text-gray-600 top-nav" href="#contact">
+              <i class="fas fa-address-book"></i>
+              Contact
+            </a>
+          </nav>
+          <div class="items-center justify-end flex-1 hidden space-x-4 xs:flex">
+            <a
+              class="px-5 py-2 text-sm font-medium text-white bg-customPurple rounded-lg focus:ring-2 focus:outline-none focus:ring-purple-800"
+              href=""
+            >
+              Contact Me
+            </a>
+          </div>
 
-<body class="">
-
-   <!-- ========== Start Navbar ========== -->
-   <header class="navbar fixed" id="scroll-nav">
-      <div class="max-w-screen-xl p-4 mx-auto bg-white ">
-         <div class="flex items-center justify-between space-x-4 lg:space-x-10 ">
-            <div class="flex lg:w-0 md:flex-1 ">
-               <span class="w-20 h-10 bg-gray-200 rounded-lg"></span>
-            </div>
-            <nav class="hidden space-x-8 text-sm font-medium md:flex ">
-               <a class="text-gray-600 top-nav  active" href="#home">
-                  <i class="fas fa-home "></i>
-                  Home
-               </a>
-               <a class="text-gray-600 top-nav " href="#about">
-                  <i class="fas fa-user-circle "></i>
-                  About
-               </a>
-               <a class="text-gray-600 top-nav " href="#services">
-                  <i class="fas fa-cog "></i>
-                  Services
-               </a>
-               <a class="text-gray-600 top-nav " href="#portfolio">
-                  <i class="fas fa-briefcase "></i>
-                  Portfolio
-               </a>
-               <a class="text-gray-600 top-nav " href="#contact">
-                  <i class="fas fa-address-book "></i>
-                  Contact
-               </a>
-            </nav>
-            <div class="items-center justify-end flex-1 hidden space-x-4 xs:flex">
-               <a class="px-5 py-2 text-sm font-medium text-white bg-customPurple rounded-lg  focus:ring-2 focus:outline-none focus:ring-purple-800"
-                  href="">
-                  Contact Me
-               </a>
-            </div>
-
-            <div class="md:hidden">
-               <button class="p-2 text-gray-600 bg-gray-100 rounded-lg" type="button" id="show-menu">
-                  <span class="sr-only">Open menu</span>
-                  <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"
-                     xmlns="http://www.w3.org/2000/svg">
-                     <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" />
-                  </svg>
-               </button>
-            </div>
-         </div>
+          <div class="md:hidden">
+            <button
+              class="p-2 text-gray-600 bg-gray-100 rounded-lg"
+              type="button"
+              id="show-menu"
+            >
+              <span class="sr-only">Open menu</span>
+              <svg
+                aria-hidden="true"
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewbox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 6h16M4 12h16M4 18h16"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
-   </header>
+    </header>
 
-   <!-- Display initial -->
-   <header class="navbar border-b-2">
-      <div class="max-w-screen-xl p-4 mx-auto backdrop-blur-sm ">
-         <div class="flex items-center justify-between space-x-4 lg:space-x-10 ">
-            <div class="flex lg:w-0 md:flex-1 ">
-               <span class="w-20 h-10 bg-gray-200 rounded-lg"></span>
-            </div>
-            <nav class="hidden space-x-8 text-sm font-medium md:flex ">
-               <a class="text-gray-600 top-nav active" href="#home">
-                  <i class="fas fa-home "></i>
-                  Home
-               </a>
-               <a class="text-gray-600 top-nav " href="#about">
-                  <i class="fas fa-user-circle "></i>
-                  About
-               </a>
-               <a class="text-gray-600 top-nav " href="#services">
-                  <i class="fas fa-cog "></i>
-                  Services
-               </a>
-               <a class="text-gray-600 top-nav " href="#portfolio">
-                  <i class="fas fa-briefcase "></i>
-                  Portfolio
-               </a>
-               <a class="text-gray-600 top-nav " href="#contact">
-                  <i class="fas fa-address-book "></i>
-                  Contact
-               </a>
-            </nav>
-            <div class="items-center justify-end flex-1 hidden space-x-4 xs:flex">
-               <a class="px-5 py-2 text-sm font-medium text-white bg-customPurple rounded-lg  focus:ring-2 focus:outline-none focus:ring-purple-800 "
-                  href="">
-                  Contact Me
-               </a>
-            </div>
+    <!-- Display initial -->
+    <header class="navbar border-b-2">
+      <div class="max-w-screen-xl p-4 mx-auto backdrop-blur-sm">
+        <div class="flex items-center justify-between space-x-4 lg:space-x-10">
+          <div class="flex lg:w-0 md:flex-1">
+            <span class="w-20 h-10 bg-gray-200 rounded-lg"></span>
+          </div>
+          <nav class="hidden space-x-8 text-sm font-medium md:flex">
+            <a class="text-gray-600 top-nav active" href="#home">
+              <i class="fas fa-home"></i>
+              Home
+            </a>
+            <a class="text-gray-600 top-nav" href="#about">
+              <i class="fas fa-user-circle"></i>
+              About
+            </a>
+            <a class="text-gray-600 top-nav" href="#services">
+              <i class="fas fa-cog"></i>
+              Services
+            </a>
+            <a class="text-gray-600 top-nav" href="#portfolio">
+              <i class="fas fa-briefcase"></i>
+              Portfolio
+            </a>
+            <a class="text-gray-600 top-nav" href="#contact">
+              <i class="fas fa-address-book"></i>
+              Contact
+            </a>
+          </nav>
+          <div class="items-center justify-end flex-1 hidden space-x-4 xs:flex">
+            <a
+              class="px-5 py-2 text-sm font-medium text-white bg-customPurple rounded-lg focus:ring-2 focus:outline-none focus:ring-purple-800"
+              href=""
+            >
+              Contact Me
+            </a>
+          </div>
 
-            <div class="md:hidden">
-               <button class="p-2 text-gray-600 bg-gray-100 rounded-lg" type="button" id="show-menu-initial">
-                  <span class="sr-only">Open menu</span>
-                  <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24"
-                     xmlns="http://www.w3.org/2000/svg">
-                     <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" />
-                  </svg>
-               </button>
-            </div>
-         </div>
+          <div class="md:hidden">
+            <button
+              class="p-2 text-gray-600 bg-gray-100 rounded-lg"
+              type="button"
+              id="show-menu-initial"
+            >
+              <span class="sr-only">Open menu</span>
+              <svg
+                aria-hidden="true"
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewbox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 6h16M4 12h16M4 18h16"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
-   </header>
-   <!-- ========== End Navbar ========== -->
+    </header>
+    <!-- ========== End Navbar ========== -->
 
-
-   <!-- ========== Start OffCanvas Menu ========== -->
-   <aside class="fixed hidden inset-y-0 right-0 z-50   " id="offcanvas">
-      <div class=" max-w-sm border-l-2 border-l-gray-400 h-full" style="width: 85vw;">
-         <div class="flex flex-col h-full divide-y divide-gray-200 bg-white  backdrop-blur ">
-            <header class="flex items-center justify-between h-16 pl-6">
-               <span class="text-sm  font-bold text-customPurple tracking-widest uppercase">
-                  AdexFlow
-               </span>
-               <button aria-label="Close menu" class="w-16 h-16 " type="button" id="close-menu">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mx-auto" fill="none" viewBox="0 0 24 24"
-                     stroke="currentColor">
-                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-               </button>
-            </header>
-            <nav
-               class="flex flex-col text-sm font-medium  text-gray-500 border-t border-b border-gray-200 divide-y divide-gray-200">
-               <a href="#home" class="flex items-center justify-center px-6 py-3 side-nav active">
-                  <i class="fas fa-home mr-3"></i>
-                  Home
-               </a>
-               <a href="#about" class="flex items-center justify-center px-6 py-3  side-nav">
-                  <i class="fas fa-user-circle mr-3"></i>
-                  About
-               </a>
-               <a href="#services" class="flex items-center justify-center px-6 py-3 side-nav">
-                  <i class="fas fa-cog mr-3"></i>
-                  Services
-               </a>
-               <a href="#portfolio" class="flex items-center justify-center px-6 py-3 side-nav">
-                  <i class="fas fa-briefcase mr-3"></i>
-                  Portfolio
-               </a>
-               <a href="#contact" class="flex items-center justify-center px-6 py-3 side-nav">
-                  <i class="fas fa-address-book mr-3 "></i>
-                  Contact
-               </a>
-               <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            </nav>
-
-         </div>
+    <!-- ========== Start OffCanvas Menu ========== -->
+    <aside class="fixed hidden inset-y-0 right-0 z-50" id="offcanvas">
+      <div
+        class="max-w-sm border-l-2 border-l-gray-400 h-full"
+        style="width: 85vw"
+      >
+        <div
+          class="flex flex-col h-full divide-y divide-gray-200 bg-white backdrop-blur"
+        >
+          <header class="flex items-center justify-between h-16 pl-6">
+            <span
+              class="text-sm font-bold text-customPurple tracking-widest uppercase"
+            >
+              AdexFlow
+            </span>
+            <button
+              aria-label="Close menu"
+              class="w-16 h-16"
+              type="button"
+              id="close-menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5 mx-auto"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </header>
+          <nav
+            class="flex flex-col text-sm font-medium text-gray-500 border-t border-b border-gray-200 divide-y divide-gray-200"
+          >
+            <a
+              href="#home"
+              class="flex items-center justify-center px-6 py-3 side-nav active"
+            >
+              <i class="fas fa-home mr-3"></i>
+              Home
+            </a>
+            <a
+              href="#about"
+              class="flex items-center justify-center px-6 py-3 side-nav"
+            >
+              <i class="fas fa-user-circle mr-3"></i>
+              About
+            </a>
+            <a
+              href="#services"
+              class="flex items-center justify-center px-6 py-3 side-nav"
+            >
+              <i class="fas fa-cog mr-3"></i>
+              Services
+            </a>
+            <a
+              href="#portfolio"
+              class="flex items-center justify-center px-6 py-3 side-nav"
+            >
+              <i class="fas fa-briefcase mr-3"></i>
+              Portfolio
+            </a>
+            <a
+              href="#contact"
+              class="flex items-center justify-center px-6 py-3 side-nav"
+            >
+              <i class="fas fa-address-book mr-3"></i>
+              Contact
+            </a>
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          </nav>
+        </div>
       </div>
-   </aside>
-   <!-- ========== End OffCanvas Menu ========== -->
+    </aside>
+    <!-- ========== End OffCanvas Menu ========== -->
 
+    <!-- ========== Start Hero Section ========== -->
 
-   <!-- ========== Start Hero Section ========== -->
-
-   <section id="home" class="scroll-mt-20 mb-28">
+    <section id="home" class="scroll-mt-20 mb-28">
       <div class="px-7 py-11 lg:py-6">
-         <div class="flex flex-col md:flex-row md:space-x-10 justify-between">
+        <div class="flex flex-col md:flex-row md:space-x-10 justify-between">
+          <div class="flex flex-col space-y-4 max-w-screen-md">
+            <h3
+              id="greeting"
+              class="text-sm w-auto mb-6 md:text-base animate__animated animate__jackInTheBox animate__slow text-customOrange"
+            >
+              Hi There!
+            </h3>
+            <h1
+              class="text-3xl xs:text-4xl sm:text:2xl md:text-4xl font-medium"
+              id="name"
+            >
+              I'm Muritala Muyideen
+            </h1>
+            <div class="intro animate-clip">
+              <h1 class="ah-headline">
+                <span class="ah-words-wrapper text-xl sm:text-2xl md:text-3xl">
+                  <b id="clip-effect" class="is-visible">FullStack Developer</b>
+                  <b id="clip-effect">Mobile App Developer</b>
+                </span>
+              </h1>
+            </div>
+            <p class="intro-text text-base md:text-lg">
+              For <span id="years"></span>+ years, I have specilaised in
+              back-end development working with teams to develop exceptional
+              user interfaces, web applications and API's.
+            </p>
+            <div class="mt-4 items-center justify-center md:justify-start flex">
+              <a
+                class="px-5 py-2 text-sm font-medium text-white bg-customOrange rounded-lg focus:ring-2 focus:outline-none focus:ring-orange-600"
+                href=""
+              >
+                Contact Me
+              </a>
+            </div>
+          </div>
 
-            <div class="flex flex-col space-y-4 max-w-screen-md">
-               <h3 id="greeting"
-                  class="text-sm w-auto mb-6 md:text-base animate__animated animate__jackInTheBox animate__slow text-customOrange">
-                  Hi There!
-               </h3>
-               <h1 class="text-3xl xs:text-4xl sm:text:2xl md:text-4xl font-medium" id="name">I'm Muritala
-                  Muyideen
-               </h1>
-               <div class="intro  animate-clip ">
-                  <h1 class="ah-headline">
-                     <span class="ah-words-wrapper text-xl sm:text-2xl md:text-3xl">
-                        <b id="clip-effect" class="is-visible">FullStack Developer</b>
-                        <b id="clip-effect">Mobile App Developer</b>
-                     </span>
-                  </h1>
-               </div>
-               <p class="intro-text text-base md:text-lg   ">
-                  For <span id="years"></span>+ years, I have specilaised in back-end development working with teams to
-                  develop exceptional user
-                  interfaces,
-                  web applications and API's.
-               </p>
-               <div class="mt-4 items-center justify-center md:justify-start flex">
-                  <a class="px-5 py-2 text-sm font-medium text-white bg-customOrange rounded-lg  focus:ring-2 focus:outline-none focus:ring-orange-600"
-                     href="">
-                     Contact Me
+          <div class="flex flex-col w-full place-items-end right-image">
+            <img
+              src="./img/Meditation-bro (1).png"
+              class="lg:w-8/12 hidden md:block"
+              alt="HeroSectionImage"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== End Hero Section ========== -->
+
+    <!-- ========== Start About Section ========== -->
+
+    <section id="about" class="mt-14 scroll-mt-24">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-12 w-10/12 mx-auto"
+      >
+        <!-- About Section Image -->
+        <div
+          class="lg:w-9/12 md:w-full sm:w-9/12 xs:w-11/12 w-full md:mr-auto mb-8 md:mb-0 bg-gray-500 text-center about-img"
+          id="aboutImg"
+        ></div>
+
+        <!-- About Section Tabs -->
+        <div class="w-full">
+          <div class="mb-4">
+            <ul
+              class="flex flex-wrap space-x-4 md:space-x-4 lg:space-x-8 text-sm font-medium text-center xs:px-5"
+              id="myTab"
+              data-tabs-toggle="#myTabContent"
+              role="tablist"
+            >
+              <li class="" role="presentation">
+                <button
+                  class="inline-block font-medium p-3 rounded-t-lg border-b-2 hover:text-customOrange text-gray-500"
+                  id="profile-tab"
+                  data-tabs-target="#profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="true"
+                >
+                  About Me
+                </button>
+              </li>
+              <li class="" role="presentation">
+                <button
+                  class="inline-block font-medium p-3 rounded-t-lg border-b-2 hover:text-gray-600 text-gray-500 hover:border-gray-300"
+                  id="dashboard-tab"
+                  data-tabs-target="#dashboard"
+                  type="button"
+                  role="tab"
+                  aria-controls="dashboard"
+                  aria-selected="false"
+                >
+                  Skills
+                </button>
+              </li>
+              <li class="" role="presentation">
+                <button
+                  class="inline-block font-medium p-3 rounded-t-lg border-b-2 hover:text-gray-600 hover:border-gray-300"
+                  id="settings-tab"
+                  data-tabs-target="#settings"
+                  type="button"
+                  role="tab"
+                  aria-controls="settings"
+                  aria-selected="false"
+                >
+                  Experience
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div id="myTabContent">
+            <!-- About Me Tab -->
+            <div
+              class="p-4 shadow bg-gray-50 rounded-lg"
+              id="profile"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              <h3 class="mb-3 text-2xl font-medium text-gray-800">My Story</h3>
+              <p class="text-base text-gray-800">
+                A software developer based in Nigeria. I enjoy creating things
+                that live on the internet, wether that be websites, applications
+                or anything between.
+              </p>
+              <p class="text-base text-gray-800 mt-4">
+                My goal is to always build products that help solve tasks that
+                can be automated and make life easier. I derive great joy in
+                creating solutions to put smile on the faces of client.
+              </p>
+            </div>
+
+            <!-- Skills Tab -->
+            <div
+              class="hidden p-4 shadow bg-gray-50 rounded-lg"
+              id="dashboard"
+              role="tabpanel"
+              aria-labelledby="dashboard-tab"
+            >
+              <p class="text-base text-gray-600">
+                Here are a few technologies, I've been working with recently:
+              </p>
+              <div class="grid grid-cols-1 xs:grid-cols-2 gap-4">
+                <div class=" ">
+                  <ul class="font-medium text-gray-900 mt-3">
+                    <li
+                      class="w-full px-4 py-2 border-b border-gray-200 rounded-t-lg"
+                    >
+                      <i
+                        class="fas fa-long-arrow-alt-right text-customPurple"
+                      ></i>
+                      HTML / CSS
+                    </li>
+                    <li class="w-full px-4 py-2 border-b border-gray-200">
+                      <i
+                        class="fas fa-long-arrow-alt-right text-customPurple"
+                      ></i>
+                      JavaScript
+                    </li>
+                    <li class="w-full px-4 py-2 border-b border-gray-200">
+                      <i
+                        class="fas fa-long-arrow-alt-right text-customPurple"
+                      ></i>
+                      Bootstrap
+                    </li>
+                    <li class="w-full px-4 py-2 border-b border-gray-200">
+                      <i
+                        class="fas fa-long-arrow-alt-right text-customPurple"
+                      ></i>
+                      Wordpress
+                    </li>
+                    <li class="w-full px-4 py-2">
+                      <i
+                        class="fas fa-long-arrow-alt-right text-customPurple"
+                      ></i>
+                      C#
+                    </li>
+                  </ul>
+                </div>
+                <div class=" ">
+                  <ul class="font-medium text-gray-900 mt-3">
+                    <li class="w-full px-4 py-2 border-b border-gray-200">
+                      <i
+                        class="fas fa-long-arrow-alt-right text-customPurple"
+                      ></i>
+                      Java
+                    </li>
+                    <li class="w-full px-4 py-2 border-b border-gray-200">
+                      <i
+                        class="fas fa-long-arrow-alt-right text-customPurple"
+                      ></i>
+                      Python
+                    </li>
+                    <li class="w-full px-4 py-2 border-b border-gray-200">
+                      <i
+                        class="fas fa-long-arrow-alt-right text-customPurple"
+                      ></i>
+                      Django
+                    </li>
+                    <li class="w-full px-4 py-2 border-b border-gray-200">
+                      <i
+                        class="fas fa-long-arrow-alt-right text-customPurple"
+                      ></i>
+                      Flutter
+                    </li>
+                    <li
+                      class="w-full px-4 py-2 rounded-b-lg d-fex justify-between"
+                    >
+                      <i
+                        class="fas fa-long-arrow-alt-right text-customPurple"
+                      ></i>
+                      SQL
+                      <i class="fas fa-database place-self-end"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience Tab -->
+            <div
+              class="hidden p-4 shadow bg-gray-50 rounded-lg"
+              id="settings"
+              role="tabpanel"
+              aria-labelledby="settings-tab"
+            >
+              <!-- Start Timeline -->
+
+              <ol class="relative border-l-2 border-gray-400">
+                <li class="mb-10 ml-4">
+                  <div
+                    class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+                  ></div>
+                  <time
+                    class="mb-1 text-sm font-normal leading-none text-gray-500 animate__animated"
+                  >
+                    February 2022 <i class="fas fa-map-marker-alt"></i>
+                  </time>
+                  <h3 class="text-lg font-medium text-gray-700 mt-2">
+                    Technical Staff at XTMonitor
+                  </h3>
+                  <p class="mb-4 text-base font-normal text-gray-600">
+                    Development of websites and applications to drive revenue
+                    plans of the company &amp; Management of XT Monitor and
+                    247Electric Admin Portals.
+                  </p>
+                  <a
+                    data-modal-toggle="first-modal"
+                    class="cursor-pointer inline-flex items-center py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-customPurple focus:z-10 focus:ring-2 focus:outline-none focus:ring-customPurple focus:text-customPurple"
+                    >Read more
+                    <svg
+                      class="ml-2 w-3 h-3"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
                   </a>
-               </div>
-            </div>
+                  <!-- Start First Modal -->
 
-            <div class="flex flex-col w-full place-items-end right-image">
-               <img src="./img/Meditation-bro (1).png" class="lg:w-8/12 hidden md:block" alt="HeroSectionImage">
-            </div>
-
-         </div>
-      </div>
-   </section>
-
-   <!-- ========== End Hero Section ========== -->
-
-
-   <!-- ========== Start About Section ========== -->
-
-   <section id="about" class="mt-14 scroll-mt-24">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-12 w-10/12 mx-auto">
-         <!-- About Section Image -->
-         <div
-            class="lg:w-9/12 md:w-full sm:w-9/12 xs:w-11/12 w-full md:mr-auto mb-8 md:mb-0 bg-gray-500 text-center about-img "
-            id="aboutImg"
-         >
-         </div>
-
-         <!-- About Section Tabs -->
-         <div class="w-full">
-
-            <div class="mb-4">
-               <ul class="flex flex-wrap space-x-4 md:space-x-4 lg:space-x-8 text-sm font-medium text-center xs:px-5"
-                  id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
-                  <li class="" role="presentation">
-                     <button
-                        class="inline-block font-medium p-3 rounded-t-lg border-b-2  hover:text-customOrange text-gray-500  "
-                        id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile"
-                        aria-selected="true">About Me</button>
-                  </li>
-                  <li class="" role="presentation">
-                     <button
-                        class="inline-block font-medium p-3 rounded-t-lg border-b-2  hover:text-gray-600 text-gray-500 hover:border-gray-300 "
-                        id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab"
-                        aria-controls="dashboard" aria-selected="false">Skills</button>
-                  </li>
-                  <li class="" role="presentation">
-                     <button
-                        class="inline-block font-medium p-3 rounded-t-lg border-b-2  hover:text-gray-600 hover:border-gray-300 "
-                        id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings"
-                        aria-selected="false">Experience</button>
-                  </li>
-               </ul>
-            </div>
-
-            <div id="myTabContent">
-
-               <!-- About Me Tab -->
-               <div class="p-4 shadow bg-gray-50 rounded-lg " id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                  <h3 class="mb-3 text-2xl font-medium text-gray-800 ">My Story</h3>
-                  <p class="text-base text-gray-800 ">
-                     A software developer based in Nigeria.
-                     I enjoy creating things that live on the internet, wether that be websites,
-                     applications or anything between.
-                  </p>
-                  <p class="text-base text-gray-800  mt-4">
-                     My goal is to always build products that help solve tasks that can be automated
-                     and make life easier. I derive great joy in creating solutions to put smile on
-                     the faces of client.
-                  </p>
-               </div>
-
-               <!-- Skills Tab -->
-               <div class="hidden p-4 shadow bg-gray-50 rounded-lg " id="dashboard" role="tabpanel"
-                  aria-labelledby="dashboard-tab">
-                  <p class="text-base text-gray-600 ">
-                     Here are a few technologies, I've been working with recently:
-                  </p>
-                  <div class="grid grid-cols-1 xs:grid-cols-2 gap-4">
-                     <div class=" ">
-                        <ul class="  font-medium text-gray-900 mt-3">
-                           <li class="w-full px-4 py-2 border-b border-gray-200 rounded-t-lg ">
-                              <i class="fas fa-long-arrow-alt-right text-customPurple"></i>
-                              HTML / CSS
-                           </li>
-                           <li class="w-full px-4 py-2 border-b border-gray-200 ">
-                              <i class="fas fa-long-arrow-alt-right text-customPurple"></i>
-                              JavaScript
-                           </li>
-                           <li class="w-full px-4 py-2 border-b border-gray-200 ">
-                              <i class="fas fa-long-arrow-alt-right text-customPurple"></i>
-                              Bootstrap
-                           </li>
-                           <li class="w-full px-4 py-2 border-b border-gray-200 ">
-                              <i class="fas fa-long-arrow-alt-right text-customPurple"></i>
-                              Wordpress
-                           </li>
-                           <li class="w-full px-4 py-2  ">
-                              <i class="fas fa-long-arrow-alt-right text-customPurple"></i>
-                              C#
-                           </li>                           
-                        </ul>
-                     </div>
-                     <div class=" ">
-                        <ul class="  font-medium text-gray-900 mt-3">
-                           <li class="w-full px-4 py-2 border-b border-gray-200 ">
-                              <i class="fas fa-long-arrow-alt-right text-customPurple"></i>
-                              Java
-                           </li>
-                           <li class="w-full px-4 py-2 border-b border-gray-200 ">
-                              <i class="fas fa-long-arrow-alt-right text-customPurple"></i>
-                              Python
-                           </li>
-                           <li class="w-full px-4 py-2 border-b border-gray-200 ">
-                              <i class="fas fa-long-arrow-alt-right text-customPurple"></i>
-                              Django
-                           </li>
-                           <li class="w-full px-4 py-2 border-b border-gray-200 ">
-                              <i class="fas fa-long-arrow-alt-right text-customPurple"></i>
-                              Flutter
-                           </li>
-                           <li class="w-full px-4 py-2 rounded-b-lg d-fex justify-between ">
-                              <i class="fas fa-long-arrow-alt-right text-customPurple"></i>
-                              SQL
-                              <i class="fas fa-database place-self-end"></i>
-                           </li>
-                        </ul>
-                     </div>
+                  <div
+                    id="first-modal"
+                    tabindex="-1"
+                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full"
+                  >
+                    <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+                      <!-- Modal content -->
+                      <div class="relative bg-white rounded-lg shadow">
+                        <!-- Modal header -->
+                        <div
+                          class="flex justify-between items-center p-5 rounded-t border-b"
+                        >
+                          <h3 class="text-xl font-medium text-gray-900">
+                            Read More
+                          </h3>
+                          <button
+                            type="button"
+                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                            data-modal-toggle="first-modal"
+                          >
+                            <svg
+                              class="w-5 h-5"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                          </button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="p-6 space-y-6">
+                          <ul class="text-gray-900 bg-white">
+                            <li
+                              class="w-full px-4 py-2 border-b border-gray-200"
+                            >
+                              <i
+                                class="fas fa-long-arrow-alt-right text-customPurple"
+                              ></i>
+                              Management of all activities on the portal
+                            </li>
+                            <li
+                              class="w-full px-4 py-2 border-b border-gray-200"
+                            >
+                              <i
+                                class="fas fa-long-arrow-alt-right text-customPurple"
+                              ></i>
+                              Provision of Technical support for the IS
+                              department and Field Operatives
+                            </li>
+                            <li
+                              class="w-full px-4 py-2 border-b border-gray-200"
+                            >
+                              <i
+                                class="fas fa-long-arrow-alt-right text-customPurple"
+                              ></i>
+                              Fixing of bugs and addition of new features
+                            </li>
+                            <li
+                              class="w-full px-4 py-2 border-b border-gray-200"
+                            >
+                              <i
+                                class="fas fa-long-arrow-alt-right text-customPurple"
+                              ></i>
+                              Auditing of XT Monitor and 247Electric Log
+                            </li>
+                            <li
+                              class="w-full px-4 py-2 border-b border-gray-200"
+                            >
+                              <i
+                                class="fas fa-long-arrow-alt-right text-customPurple"
+                              ></i>
+                              Development of websites and applications to drive
+                              revenue plans of the company
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- Modal Footer -->
+                        <div class="flex p-6 space-x-2 rounded-b">
+                          <a
+                            href="http://www.xtmonitor.com/"
+                            target="_blank"
+                            type="button"
+                            class="focus:ring-2 ml-auto focus:outline-none rounded-lg border text-sm font-medium px-5 py-2.5 focus:z-10 bg-customPurple text-gray-200 border-gray-500 hover:text-white hover:bg-indigo-900 focus:ring-indigo-800"
+                          >
+                            Visit Site <i class="fas fa-broom"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-               </div>
 
-               <!-- Experience Tab -->
-               <div class="hidden p-4 shadow bg-gray-50 rounded-lg   " id="settings" role="tabpanel"
-                  aria-labelledby="settings-tab">
+                  <!-- End First Modal -->
+                </li>
 
-                  <!-- Start Timeline -->
+                <li class="mb-2 ml-4">
+                  <div
+                    class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+                  ></div>
+                  <time
+                    class="mb-1 text-sm font-normal leading-none text-gray-500"
+                  >
+                    March 2020 <i class="fas fa-map-marker-alt"></i>
+                  </time>
+                  <h3 class="text-lg font-medium text-gray-800 mt-2">
+                    Instructor at Aptech Computer Education
+                  </h3>
+                  <p class="mb-4 text-base font-normal text-gray-600">
+                    Faculty Head. Management and Maintenance of Aptech Ota
+                    Platform Allocation of courses and classes.
+                  </p>
+                  <a
+                    data-modal-toggle="second-modal"
+                    class="cursor-pointer inline-flex items-center py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-customPurple focus:z-10 focus:ring-2 focus:outline-none focus:ring-customPurple focus:text-customPurple"
+                    >Read more
+                    <svg
+                      class="ml-2 w-3 h-3"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </a>
 
-                  <ol class="relative border-l-2 border-gray-400 ">
-                     <li class="mb-10 ml-4">
+                  <!-- Start First Modal -->
+                  <div
+                    id="second-modal"
+                    tabindex="-1"
+                    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full"
+                  >
+                    <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+                      <!-- Modal content -->
+                      <div class="relative bg-white rounded-lg shadow">
+                        <!-- Modal header -->
                         <div
-                           class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                          class="flex justify-between items-center p-5 rounded-t border-b"
+                        >
+                          <h3 class="text-xl font-medium text-gray-900">
+                            Read More
+                          </h3>
+                          <button
+                            type="button"
+                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                            data-modal-toggle="second-modal"
+                          >
+                            <svg
+                              class="w-5 h-5"
+                              fill="currentColor"
+                              viewBox="0 0 20 20"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                          </button>
                         </div>
-                        <time class="mb-1 text-sm font-normal leading-none text-gray-500  animate__animated  ">
-                           February 2022 <i class="fas fa-map-marker-alt"></i>
-                        </time>
-                        <h3 class="text-lg font-medium text-gray-700 mt-2 ">
-                           Technical Staff at XTMonitor
-                        </h3>
-                        <p class="mb-4 text-base font-normal text-gray-600 ">
-                           Development of websites and applications to drive revenue plans of the company &amp;
-                           Management of XT Monitor and 247Electric Admin Portals.
-                        </p>
-                        <a data-modal-toggle="first-modal"
-                           class="cursor-pointer inline-flex items-center py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-customPurple focus:z-10 focus:ring-2 focus:outline-none focus:ring-customPurple focus:text-customPurple">Read
-                           more <svg class="ml-2 w-3 h-3" fill="currentColor" viewBox="0 0 20 20"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd"
-                                 d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                                 clip-rule="evenodd"></path>
-                           </svg>
-                        </a>
-                        <!-- Start First Modal -->
-
-                        <div id="first-modal" tabindex="-1"
-                           class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full">
-                           <div class="relative p-4 w-full max-w-md h-full md:h-auto">
-                              <!-- Modal content -->
-                              <div class="relative bg-white rounded-lg shadow ">
-                                 <!-- Modal header -->
-                                 <div class="flex justify-between items-center p-5 rounded-t border-b ">
-                                    <h3 class="text-xl font-medium text-gray-900 ">
-                                       Read More
-                                    </h3>
-                                    <button type="button"
-                                       class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                                       data-modal-toggle="first-modal">
-                                       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                                          xmlns="http://www.w3.org/2000/svg">
-                                          <path fill-rule="evenodd"
-                                             d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                             clip-rule="evenodd"></path>
-                                       </svg>
-                                    </button>
-                                 </div>
-                                 <!-- Modal body -->
-                                 <div class="p-6 space-y-6">
-                                    <ul class=" text-gray-900 bg-white ">
-                                       <li class="w-full px-4 py-2 border-b border-gray-200 ">
-                                          <i class="fas fa-long-arrow-alt-right text-customPurple"></i>
-                                          Management of all activities on the portal
-                                       </li>
-                                       <li class="w-full px-4 py-2 border-b border-gray-200 ">
-                                          <i class="fas fa-long-arrow-alt-right text-customPurple"></i>
-                                          Provision of Technical support for the IS department and Field Operatives
-                                       </li>
-                                       <li class="w-full px-4 py-2 border-b border-gray-200 ">
-                                          <i class="fas fa-long-arrow-alt-right text-customPurple"></i>
-                                          Fixing of bugs and addition of new features
-                                       </li>
-                                       <li class="w-full px-4 py-2 border-b border-gray-200 ">
-                                          <i class="fas fa-long-arrow-alt-right text-customPurple"></i>
-                                          Auditing of XT Monitor and 247Electric Log
-                                       </li>
-                                       <li class="w-full px-4 py-2 border-b border-gray-200 ">
-                                          <i class="fas fa-long-arrow-alt-right text-customPurple"></i>
-                                          Development of websites and applications to drive revenue plans of the company
-                                       </li>
-                                    </ul>
-                                 </div>
-                                 <!-- Modal Footer -->
-                                 <div class="flex p-6 space-x-2 rounded-b ">
-                                    <a href="http://www.xtmonitor.com/" target="_blank" type="button"
-                                       class="focus:ring-2 ml-auto focus:outline-none rounded-lg border text-sm font-medium px-5 py-2.5 focus:z-10 bg-customPurple text-gray-200 border-gray-500 hover:text-white hover:bg-indigo-900 focus:ring-indigo-800">
-                                       Visit Site <i class="fas fa-broom"></i>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
+                        <!-- Modal body -->
+                        <div class="p-6 space-y-6">
+                          <ul class="text-gray-900 bg-white">
+                            <li
+                              class="w-full px-4 py-2 border-b border-gray-200"
+                            >
+                              <i
+                                class="fas fa-long-arrow-alt-right text-customPurple"
+                              ></i>
+                              Responsibility of all academic staff
+                            </li>
+                            <li
+                              class="w-full px-4 py-2 border-b border-gray-200"
+                            >
+                              <i
+                                class="fas fa-long-arrow-alt-right text-customPurple"
+                              ></i>
+                              Organization of seminar for students
+                            </li>
+                            <li
+                              class="w-full px-4 py-2 border-b border-gray-200"
+                            >
+                              <i
+                                class="fas fa-long-arrow-alt-right text-customPurple"
+                              ></i>
+                              Partake in project and exam for the center
+                            </li>
+                          </ul>
                         </div>
-
-                        <!-- End First Modal -->
-                     </li>
-
-                     <li class="mb-2 ml-4">
-                        <div
-                           class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                        <!-- Modal Footer -->
+                        <div class="flex p-6 space-x-2 rounded-b">
+                          <a
+                            href="http://www.aptechota.com/"
+                            target="_blank"
+                            type="button"
+                            class="focus:ring-2 ml-auto focus:outline-none rounded-lg border text-sm font-medium px-5 py-2.5 focus:z-10 bg-customPurple text-gray-200 border-gray-500 hover:text-white hover:bg-indigo-900 focus:ring-indigo-800"
+                          >
+                            Visit Site <i class="fas fa-broom"></i>
+                          </a>
                         </div>
-                        <time class="mb-1 text-sm font-normal leading-none text-gray-500 ">
-                           March 2020 <i class="fas fa-map-marker-alt"></i>
-                        </time>
-                        <h3 class="text-lg font-medium text-gray-800 mt-2">
-                           Instructor at Aptech Computer Education
-                        </h3>
-                        <p class="mb-4 text-base font-normal text-gray-600">
-                           Faculty Head. Management and Maintenance of Aptech Ota
-                           Platform
-                           Allocation of courses and classes.
-                        </p>
-                        <a data-modal-toggle="second-modal"
-                           class="cursor-pointer inline-flex items-center py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-customPurple focus:z-10 focus:ring-2 focus:outline-none focus:ring-customPurple focus:text-customPurple">Read
-                           more <svg class="ml-2 w-3 h-3" fill="currentColor" viewBox="0 0 20 20"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path fill-rule="evenodd"
-                                 d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                                 clip-rule="evenodd"></path>
-                           </svg>
-                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Second Modal -->
+                </li>
+              </ol>
 
-                        <!-- Start First Modal -->
-                        <div id="second-modal" tabindex="-1"
-                           class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full">
-                           <div class="relative p-4 w-full max-w-md h-full md:h-auto">
-                              <!-- Modal content -->
-                              <div class="relative bg-white rounded-lg shadow ">
-                                 <!-- Modal header -->
-                                 <div class="flex justify-between items-center p-5 rounded-t border-b ">
-                                    <h3 class="text-xl font-medium text-gray-900 ">
-                                       Read More
-                                    </h3>
-                                    <button type="button"
-                                       class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                                       data-modal-toggle="second-modal">
-                                       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                                          xmlns="http://www.w3.org/2000/svg">
-                                          <path fill-rule="evenodd"
-                                             d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                             clip-rule="evenodd"></path>
-                                       </svg>
-                                    </button>
-                                 </div>
-                                 <!-- Modal body -->
-                                 <div class="p-6 space-y-6">
-                                    <ul class=" text-gray-900 bg-white ">
-                                       <li class="w-full px-4 py-2 border-b border-gray-200 ">
-                                          <i class="fas fa-long-arrow-alt-right text-customPurple"></i>
-                                          Responsibility of all academic staff
-                                       </li>
-                                       <li class="w-full px-4 py-2 border-b border-gray-200 ">
-                                          <i class="fas fa-long-arrow-alt-right text-customPurple"></i>
-                                          Organization of seminar for students
-                                       </li>
-                                       <li class="w-full px-4 py-2 border-b border-gray-200 ">
-                                          <i class="fas fa-long-arrow-alt-right text-customPurple"></i>
-                                          Partake in project and exam for the center
-                                       </li>
-                                    </ul>
-                                 </div>
-                                 <!-- Modal Footer -->
-                                 <div class="flex p-6 space-x-2 rounded-b ">
-                                    <a href="http://www.aptechota.com/" target="_blank" type="button"
-                                       class="focus:ring-2 ml-auto focus:outline-none rounded-lg border text-sm font-medium px-5 py-2.5 focus:z-10 bg-customPurple text-gray-200 border-gray-500 hover:text-white hover:bg-indigo-900 focus:ring-indigo-800">
-                                       Visit Site <i class="fas fa-broom"></i>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <!-- End Second Modal -->
-
-                     </li>
-                  </ol>
-
-                  <!-- End Timeline  -->
-               </div>
+              <!-- End Timeline  -->
             </div>
-
-         </div>
+          </div>
+        </div>
       </div>
-   </section>
+    </section>
 
-   <!-- ========== End About Section ========== -->
+    <!-- ========== End About Section ========== -->
 
-   <!-- ========== Start Services Section ======-->
+    <!-- ========== Start Services Section ======-->
 
-   <section id="services" class="mt-32 py-3  scroll-mt-28 w-10/12 mx-auto">
-      <div class="container  w-full mx-auto mb-8 text-center">
-         <h3 class="text-customPurple font-semibold text-3xl uppercase mb-2">SERVICES</h3>
-         <p class="capitalize text-lg ">The Services I'll Provide You</p>
+    <section id="services" class="mt-32 py-3 scroll-mt-28 w-10/12 mx-auto">
+      <div class="container w-full mx-auto mb-8 text-center">
+        <h3 class="text-customPurple font-semibold text-3xl uppercase mb-2">
+          SERVICES
+        </h3>
+        <p class="capitalize text-lg">The Services I'll Provide You</p>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 ">
-         <div class="bg-gray-100 p-5 text-center rounded-lg shadow">
-            <img src="img/icons/software.png" class="w-auto h-auto mx-auto mt-3" alt="SoftwareDevelopmentImage">
-            <h4 class="mt-4 text-customOrange font-medium text-lg">Software Development</h4>
-            <p class="mt-3">
-               Experienced in the creation, design and deployment of software. And also deals with software software
-            </p>
-         </div>
-         <div class="bg-gray-100 p-5 text-center rounded-lg shadow">
-            <img src="img/icons/web-programming.png" class="w-auto h-auto mx-auto mt-3" alt="WebDevelopmentImage">
-            <h4 class="mt-4 text-customOrange font-medium text-lg">Web Development</h4>
-            <p class="mt-3">
-               Development of simple single static pages of plain text to 
-               complex web applications, electronic businesses e.t.c
-            </p>
-         </div>
-         <div class="bg-gray-100 p-5 text-center rounded-lg shadow">
-            <img src="img/icons/mobile-development (2).png" class="w-auto h-auto mx-auto mt-3" alt="MobileAppDevelopmentImage">
-            <h4 class="mt-4 text-customOrange font-medium text-lg">Mobile App Development</h4>
-            <p class="mt-3">
-               Creation of  software applications that run on a mobile devices. 
-               Applications I develop run on both Android and IOS
-            </p>
-         </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gray-50 p-5 text-center rounded-lg shadow">
+          <img
+            src="img/icons/software.png"
+            class="w-auto h-auto mx-auto mt-3"
+            alt="SoftwareDevelopmentImage"
+          />
+          <h4 class="mt-4 text-customOrange font-medium text-lg">
+            Software Development
+          </h4>
+          <p class="mt-3">
+            Experienced in the creation, design and deployment of software. And
+            also deals with software software
+          </p>
+        </div>
+        <div class="bg-gray-50 p-5 text-center rounded-lg shadow">
+          <img
+            src="img/icons/web-programming.png"
+            class="w-auto h-auto mx-auto mt-3"
+            alt="WebDevelopmentImage"
+          />
+          <h4 class="mt-4 text-customOrange font-medium text-lg">
+            Web Development
+          </h4>
+          <p class="mt-3">
+            Development of simple single static pages of plain text to complex
+            web applications, electronic businesses e.t.c
+          </p>
+        </div>
+        <div class="bg-gray-50 p-5 text-center rounded-lg shadow">
+          <img
+            src="img/icons/mobile-development (2).png"
+            class="w-auto h-auto mx-auto mt-3"
+            alt="MobileAppDevelopmentImage"
+          />
+          <h4 class="mt-4 text-customOrange font-medium text-lg">
+            Mobile App Development
+          </h4>
+          <p class="mt-3">
+            Creation of software applications that run on a mobile devices.
+            Applications I develop run on both Android and IOS
+          </p>
+        </div>
       </div>
-   </section>
+    </section>
 
-   <!-- ========== End Services Section ======= -->
+    <!-- ========== End Services Section ======= -->
+
+    <!-- ========== Start Jumbotron Section ====== -->
+
+    <article id="jumbotron" class="mt-24 py-10 bg-gray-700">      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-10/12 mx-auto">
+        <div class="bg-white h-12  w-full md:col-span-2 text-center md:text-left">01</div>
+        <!-- ... -->
+        <div class="bg-white h-12  w-full text-center md:text-left">09</div>
+      </div>      
+    </article>
+
+    <!-- ==========End Jumbrotron Section ======== -->
 
 
-   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- ========== Start Portfolio Section ======= -->
 
+    <section id="portfolio" class="mt-24 py-3 scroll-mt-28 w-10/12 mx-auto">
+      <div class="container w-full mx-auto mb-8 text-center">
+        <h3 class="text-customPurple font-semibold text-3xl uppercase mb-2">
+          PORTFOLIO
+        </h3>
+        <p class="capitalize text-lg">My Latest Work</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-gray-50 p-5 text-center rounded-lg shadow">
+          
+        </div>
+        <div class="bg-gray-50 p-5 text-center rounded-lg shadow">
+          
+        </div>
+        <div class="bg-gray-50 p-5 text-center rounded-lg shadow">
+          
+        </div>
+      </div>
+    </section>
 
-   <script src="js/flowbite.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    <!-- ========== End Portfolio Section ========= -->
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <script src="js/flowbite.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   <script src="js/jquery.animatedheadline.min.js"></script>
-   <script src="js/script.js"></script>
-</body>
-
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/jquery.animatedheadline.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

@@ -723,6 +723,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: auto;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .w-20 {
   width: 5rem;
 }
@@ -1061,6 +1065,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: transparent;
 }
 
+.bg-gray-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
 }
@@ -1140,6 +1149,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-2\.5 {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pl-6 {
@@ -1276,18 +1290,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-sm {
-  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-md {
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .blur {
   --tw-blur: blur(8px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1350,12 +1352,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   @apply bg-customPurple;
 } */
 
-h1,h2,h3,h4,h5,a, #myTab li {
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+#myTab li {
   font-family: "Poppins", sans-serif;
 }
 
 p,
-h6, li {
+h6,
+li {
   font-family: "Baloo 2", cursive;
 }
 
@@ -1379,7 +1388,7 @@ h6, li {
   font-weight: 600 !important;
 }
 
-.side-nav i{
+.side-nav i {
   font-size: 20px;
 }
 
@@ -1417,12 +1426,18 @@ h6, li {
 }
 
 @media screen and (min-width: 992px) {
-  #home{
+  #home {
     height: 75vh;
   }
 }
 
-#home{
+@media screen and (max-width: 991px) {
+  #home {
+    height: 70vh;
+  }
+}
+
+#home {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1474,7 +1489,7 @@ h6, li {
   color: #fff;
 }
 
-#aboutImg{
+#aboutImg {
   height: 80vh;
   background-size: cover;
   border-radius: 10px;
@@ -1482,7 +1497,7 @@ h6, li {
   background-image: url("../img/african-man-black-suit.jpg");
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width: 992px) {
   #aboutImg {
     margin-left: auto;
     margin-right: auto;
@@ -1702,6 +1717,10 @@ h6, li {
     left: 0px;
   }
 
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .md\:mr-auto {
     margin-right: auto;
   }
@@ -1764,6 +1783,10 @@ h6, li {
     --tw-space-x-reverse: 0;
     margin-right: calc(1rem * var(--tw-space-x-reverse));
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 
   .md\:text-base {

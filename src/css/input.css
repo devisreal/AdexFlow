@@ -17,12 +17,19 @@
   @apply bg-customPurple;
 } */
 
-h1,h2,h3,h4,h5,a, #myTab li {
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+#myTab li {
   font-family: "Poppins", sans-serif;
 }
 
 p,
-h6, li {
+h6,
+li {
   font-family: "Baloo 2", cursive;
 }
 
@@ -30,15 +37,15 @@ h6, li {
   @apply border-b-2 border-b-customPurple  pb-1 text-customPurple;
 }
 
-.top-nav.active i{
-  @apply text-customPurple 
+.top-nav.active i {
+  @apply text-customPurple;
 }
 
 .side-nav.active {
   @apply text-customPurple;
   font-weight: 600 !important;
 }
-.side-nav i{
+.side-nav i {
   font-size: 20px;
 }
 
@@ -52,8 +59,6 @@ h6, li {
   width: 100%;
   top: -80px;
 }
-
-
 
 @media screen and (max-width: 786px) {
   .animate-clip {
@@ -74,12 +79,18 @@ h6, li {
 }
 
 @media screen and (min-width: 992px) {
-  #home{
+  #home {
     height: 75vh;
   }
 }
 
-#home{
+@media screen and (max-width: 991px) {
+  #home {
+    height: 70vh;
+  }
+}
+
+#home {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -127,7 +138,7 @@ h6, li {
 .intro-text {
   color: #fff;
 }
-#aboutImg{
+#aboutImg {
   height: 80vh;
   background-size: cover;
   border-radius: 10px;
@@ -135,8 +146,8 @@ h6, li {
   background-image: url("../img/african-man-black-suit.jpg");
 }
 
-@media screen and (max-width:992px) {
-  #aboutImg{
-    @apply mx-auto
+@media screen and (max-width: 992px) {
+  #aboutImg {
+    @apply mx-auto;
   }
 }
