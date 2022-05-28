@@ -30,7 +30,8 @@ a,
 p,
 h6,
 li {
-  font-family: "Baloo 2", cursive;
+  /* font-family: "Baloo 2", cursive; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .top-nav.active {
