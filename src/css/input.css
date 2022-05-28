@@ -1,6 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+  --customOrange: #F95700;
+  --customPurple: #2E186A;
+}
+
 /* ::-webkit-scrollbar {
   width: 10px;
 } */
@@ -23,13 +29,14 @@ h3,
 h4,
 h5,
 a,
-#myTab li {
+button,
+#myTab li , label{
   font-family: "Poppins", sans-serif;
 }
 
 p,
 h6,
-li {
+li , input, textarea{
   /* font-family: "Baloo 2", cursive; */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -152,3 +159,26 @@ li {
     @apply mx-auto;
   }
 }
+
+form{
+  display: grid;
+}
+
+form input::placeholder, textarea::placeholder{
+  font-family: poppins;
+  font-size: 14px;
+}
+
+form input[type=text], input[type=email]{
+  height: 45px;  
+}
+
+.form-control {
+  border: none;
+  outline: none !important;
+  background-color: #fff;
+  color: #333;  
+  border-radius: 5px;    
+  resize: none;
+}
+
