@@ -36,3 +36,6 @@ let yearDifference = currentYear - startYear;
 
 var years = document.getElementById("years");
 years.innerHTML = yearDifference;
+
+var copyright = document.getElementById("copyright");
+copyright.innerHTML = currentYear;

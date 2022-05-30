@@ -37,8 +37,7 @@ button,
 p,
 h6,
 li , input, textarea{
-  /* font-family: "Baloo 2", cursive; */
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Baloo 2", cursive;  
 }
 
 .top-nav.active {
@@ -150,6 +149,7 @@ li , input, textarea{
   height: 80vh;
   background-size: cover;
   border-radius: 10px;
+  background-position: center;
   /* background-position: center;   */
   background-image: url("../img/african-man-black-suit.jpg");
 }
@@ -167,6 +167,7 @@ form{
 form input::placeholder, textarea::placeholder{
   font-family: poppins;
   font-size: 14px;
+  font-weight: 400;
 }
 
 form input[type=text], input[type=email]{
@@ -178,7 +179,10 @@ form input[type=text], input[type=email]{
   outline: none !important;
   background-color: #fff;
   color: #333;  
-  border-radius: 5px;    
+  border-radius: 5px;  
+  font-weight: 600;  
   resize: none;
 }
+
+
 
