@@ -130,6 +130,22 @@
   </header>
   <!-- ========== End Navbar ========== -->
 
+<div 
+  id="birthday-toast" 
+  class="animate__animated animate__zoomIn animate__delay-3s absolute top-20 sm:top-20 right-0 xs:right-5 flex items-center w-full max-w-xs p-3 text-gray-600 bg-white rounded-lg shadow " 
+  role="alert"
+>
+  <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-customOrange bg-gray-100 rounded-lg ">                
+    <i class="fas fa-praying-hands"></i>
+  </div>
+  <div class="ml-3 text-sm font-baloo">
+    Hey, it's my birthday, say me a prayer 
+  </div>
+  <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex h-8 w-8 " data-dismiss-target="#birthday-toast" aria-label="Close">
+    <span class="sr-only">Close</span>
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+  </button>
+</div>
   <!-- ========== Start OffCanvas Menu ========== -->
   <aside class="fixed hidden inset-y-0 right-0 z-50" id="offcanvas">
     <div class="max-w-sm border-l-2 border-l-gray-400 h-full" style="width: 85vw">
@@ -180,6 +196,7 @@
     <div class="px-7 py-11 lg:py-6">
       <div class="flex flex-col md:flex-row md:space-x-10 justify-between">
         <div class="flex flex-col space-y-4 max-w-screen-md">
+          <div class="mb-3 sm:mb-0"></div>
           <h3 id="greeting"
             class="text-sm w-auto mb-6 md:text-base animate__animated animate__jackInTheBox animate__slow text-customOrange">
             Hi There!
@@ -209,7 +226,7 @@
         </div>
 
         <div class="flex flex-col w-full place-items-end right-image">
-          <img src="./img/Meditation-bro (1).png" class="lg:w-8/12 hidden md:block" alt="HeroSectionImage" />
+          <img src="./img/Meditation-bro (1).png" class="lg:w-8/12 lg:mt-3 hidden md:block" alt="HeroSectionImage" />
         </div>
       </div>
     </div>
@@ -717,10 +734,10 @@
 
         <!-- Social Media -->
         <div class="social mt-5 ml-6">
-          <h5 class="mb-1">            
+          <h5 class="mb-2">
             Social Links
           </h5>
-          <div class="flex justify-between w-3/12">
+          <div class="flex space-x-3">
             <a href="https://www.facebook.com/adeyinkanewton" target="_blank" class="text-lg font-medium">
               <i class="hover:text-customOrange transition-all ease-in fab fa-facebook text-customPurple " style="font-size: 22px;" ></i>
             </a>
@@ -760,6 +777,8 @@
   </section>
 
   <!-- ========== End Contact Section =========== -->
+
+  
 
   <!-- ========== Start Footer ================== -->
 

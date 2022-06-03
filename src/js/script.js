@@ -39,3 +39,13 @@ years.innerHTML = yearDifference;
 
 var copyright = document.getElementById("copyright");
 copyright.innerHTML = currentYear;
+
+var myBirthday = new Date()
+myBirthday.setDate(3)
+myBirthday.setMonth(5)
+let today = new Date()
+
+var birthdayToast = document.getElementById("birthday-toast")
+if (today.getMonth() == myBirthday.getMonth() && today.getDate() == myBirthday.getDate()){
+  birthdayToast.style.display = "flex"
+}
