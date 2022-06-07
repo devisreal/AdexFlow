@@ -158,12 +158,12 @@ li , input, textarea{
   color: #fff;
 }
 #aboutImg {
-  height: 80vh;
+  height: 82vh;
   background-size: cover;
   border-radius: 10px;
   background-position: center;
   /* background-position: center;   */
-  background-image: url("../img/IMG_0529_auto_x2_colored_toned_light_ai.png");
+  background-image: url("../img/MrBabs.png");
 }
 
 @media screen and (max-width: 992px) {

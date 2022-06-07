@@ -95,7 +95,7 @@ sr.reveal(".about-tabs, .jumbo.right, .contact-form", {
   origin: "right",
   scale: 0.75,
   opacity: 0,
-  delay: 300,
+  delay: 500,
 });
 
 sr.reveal(".jumbo.left", {
@@ -125,7 +125,7 @@ sr.reveal(".service-box.left, .portfolio-box.left", {
   origin: "left",
   scale: 0.75,
   opacity: 0,
-  delay: 700,
+  delay: 300,
 });
 
 // center
@@ -135,7 +135,7 @@ sr.reveal(".service-box.center, .portfolio-box.center", {
   origin: "top",
   scale: 0.75,
   opacity: 0,
-  delay: 1200,
+  delay: 700,
 });
 
 // right
@@ -145,7 +145,7 @@ sr.reveal(".service-box.right, .portfolio-box.right", {
   origin: "right",
   scale: 0.75,
   opacity: 0,
-  delay: 1700,
+  delay: 1000,
 });
 
 // Footer
