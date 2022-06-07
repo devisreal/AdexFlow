@@ -472,9 +472,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
+.\!container {
+  width: 100% !important;
+}
+
 @media (min-width: 475px) {
   .container {
     max-width: 475px;
+  }
+
+  .\!container {
+    max-width: 475px !important;
   }
 }
 
@@ -482,11 +490,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   .container {
     max-width: 576px;
   }
+
+  .\!container {
+    max-width: 576px !important;
+  }
 }
 
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+
+  .\!container {
+    max-width: 768px !important;
   }
 }
 
@@ -494,11 +510,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   .container {
     max-width: 976px;
   }
+
+  .\!container {
+    max-width: 976px !important;
+  }
 }
 
 @media (min-width: 1440px) {
   .container {
     max-width: 1440px;
+  }
+
+  .\!container {
+    max-width: 1440px !important;
   }
 }
 
@@ -639,10 +663,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.75rem;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
 }
@@ -699,6 +719,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 8rem;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .mt-24 {
   margin-top: 6rem;
 }
@@ -711,20 +735,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 1.5rem;
 }
 
-.mb-7 {
-  margin-bottom: 1.75rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
 .block {
   display: block;
 }
 
 .inline-block {
   display: inline-block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -1007,12 +1027,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
-.space-y-5 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
-}
-
 .divide-y > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
@@ -1102,16 +1116,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-gray-500 {
   --tw-border-opacity: 1;
   border-color: rgb(107 114 128 / var(--tw-border-opacity));
-}
-
-.border-customOrange {
-  --tw-border-opacity: 1;
-  border-color: rgb(249 87 0 / var(--tw-border-opacity));
-}
-
-.border-gray-100 {
-  --tw-border-opacity: 1;
-  border-color: rgb(243 244 246 / var(--tw-border-opacity));
 }
 
 .border-l-gray-400 {
@@ -1266,10 +1270,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pl-6 {
   padding-left: 1.5rem;
-}
-
-.pr-6 {
-  padding-right: 1.5rem;
 }
 
 .text-center {
@@ -1462,6 +1462,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
+.\!transition {
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter !important;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter !important;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 150ms !important;
+}
+
 .duration-150 {
   transition-duration: 150ms;
 }
@@ -1481,6 +1489,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 :root{
   --customOrange: #F95700;
   --customPurple: #2E186A;
+}
+
+html.sr .load-hidden {
+  visibility: hidden;
 }
 
 /* ::-webkit-scrollbar {
@@ -1588,7 +1600,7 @@ li , input, textarea{
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 400px) {
   #home {
     height: 75vh;
   }
@@ -1652,7 +1664,7 @@ li , input, textarea{
   border-radius: 10px;
   background-position: center;
   /* background-position: center;   */
-  background-image: url("../img/african-man-black-suit.jpg");
+  background-image: url("../img/IMG_0529_auto_x2_colored_toned_light_ai.png");
 }
 
 @media screen and (max-width: 992px) {
@@ -1705,11 +1717,6 @@ form input[type=text], input[type=email]{
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
-}
-
-.hover\:border-gray-400:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
 .hover\:bg-gray-100:hover {
@@ -1833,9 +1840,14 @@ form input[type=text], input[type=email]{
     border-color: rgb(17 24 39 / var(--tw-border-opacity));
   }
 
-  .dark\:border-gray-100 {
+  .dark\:border-gray-400 {
     --tw-border-opacity: 1;
-    border-color: rgb(243 244 246 / var(--tw-border-opacity));
+    border-color: rgb(156 163 175 / var(--tw-border-opacity));
+  }
+
+  .dark\:border-white {
+    --tw-border-opacity: 1;
+    border-color: rgb(255 255 255 / var(--tw-border-opacity));
   }
 
   .dark\:bg-gray-700 {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth sr">
 
 <head>
   <meta charset="UTF-8" />
@@ -245,7 +245,7 @@
         id="aboutImg"></div>
 
       <!-- About Section Tabs -->
-      <div class="w-full">
+      <div class="w-full about-tabs" >
         <div class="mb-4">
           <ul class="flex flex-wrap space-x-4 md:space-x-4 lg:space-x-8 text-sm font-medium text-center xs:px-5"
             id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
@@ -522,14 +522,14 @@
   <!-- ========== Start Services Section ======-->
 
   <section id="services" class="mt-32 py-3 scroll-mt-28 w-11/12 xs:w-10/12 mx-auto">
-    <div class="container w-full mx-auto mb-8 text-center">
+    <div class="container w-full mx-auto mb-12 text-center service-heading">
       <h3 class="text-customPurple font-semibold text-3xl uppercase mb-2">
         SERVICES
       </h3>
       <p class="capitalize text-lg font-medium">The Services I'll Provide You</p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-gray-50 p-5 text-center rounded-lg shadow">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 ">
+      <div class="bg-gray-50 p-5 text-center rounded-lg shadow service-box left">
         <img src="img/icons/software.png" class="w-auto h-auto mx-auto mt-3" alt="SoftwareDevelopmentImage" />
         <h4 class="mt-4 text-customOrange font-medium text-lg">
           Software Development
@@ -539,7 +539,7 @@
           also deals with software software
         </p>
       </div>
-      <div class="bg-gray-50 p-5 text-center rounded-lg shadow">
+      <div class="bg-gray-50 p-5 text-center rounded-lg shadow service-box center">
         <img src="img/icons/web-programming.png" class="w-auto h-auto mx-auto mt-3" alt="WebDevelopmentImage" />
         <h4 class="mt-4 text-customOrange font-medium text-lg">
           Web Development
@@ -549,7 +549,7 @@
           web applications, electronic businesses e.t.c
         </p>
       </div>
-      <div class="bg-gray-50 p-5 text-center rounded-lg shadow">
+      <div class="bg-gray-50 p-5 text-center rounded-lg shadow service-box right">
         <img src="img/icons/mobile-development (2).png" class="w-auto h-auto mx-auto mt-3"
           alt="MobileAppDevelopmentImage" />
         <h4 class="mt-4 text-customOrange font-medium text-lg">
@@ -569,7 +569,7 @@
 
   <section id="jumbotron" class="mt-24 py-12 md:py-10 bg-gray-700">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 w-10/12 mx-auto">
-      <div class="text-white w-full md:col-span-2 text-center md:text-left">
+      <div class="text-white w-full md:col-span-2 text-center md:text-left jumbo left">
         <h1 class="text-2xl md:w-10/12">
           Have any works you want done by me?
         </h1>
@@ -579,7 +579,7 @@
         </p>
       </div>
       <!-- ... -->
-      <div class="w-full md:py-8 text-center">
+      <div class="w-full md:py-8 text-center jumbo right">
         <a class="px-5 py-2 text-sm w-auto ml-auto font-medium text-customOrange bg-white hover:text-white hover:bg-customOrange transition duration-150 ease-in-out rounded-lg focus:ring-2 focus:outline-none focus:ring-orange-600"
           href="#contact">
           Contact Me
@@ -593,14 +593,14 @@
   <!-- ========== Start Portfolio Section ======= -->
 
   <section id="portfolio" class="mt-24 py-3 scroll-mt-24 w-11/12 xs:w-10/12 mx-auto">
-    <div class="container w-full mx-auto mb-8 text-center">
+    <div class="container w-full mx-auto mb-8 text-center portfolio-heading">
       <h3 class="text-customPurple font-semibold text-3xl uppercase mb-2">
         PORTFOLIO
       </h3>
       <p class="capitalize text-lg font-medium">My Latest Work</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-gray-50 p-2 shadow">
+      <div class="bg-gray-50 p-2 shadow portfolio-box left">
         <img src="img/3.jpg" alt="PortfolioImage" class="pointer-events-none">
         <div class="portfolio-details mt-3">
           <h1 class="text-lg font-medium ">Portfolio Title</h1>
@@ -621,7 +621,7 @@
           </div>
         </div>
       </div>
-      <div class="bg-gray-50 p-2 shadow">
+      <div class="bg-gray-50 p-2 shadow portfolio-box center">
         <img src="img/3.jpg" alt="PortfolioImage" class="pointer-events-none">
         <div class="portfolio-details mt-3">
           <h1 class="text-lg font-medium ">Portfolio Title</h1>
@@ -642,7 +642,7 @@
           </div>
         </div>
       </div>
-      <div class="bg-gray-50 p-2 shadow">
+      <div class="bg-gray-50 p-2 shadow portfolio-box right">
         <img src="img/3.jpg" alt="PortfolioImage" class="pointer-events-none">
         <div class="portfolio-details mt-3">
           <h1 class="text-lg font-medium ">Portfolio Title</h1>
@@ -673,14 +673,14 @@
 
   <section id="contact" class="mt-24 py-3 scroll-mt-24 w-11/12 xs:w-10/12 mx-auto">
 
-    <div class="container w-full mx-auto mb-8 text-center">
+    <div class="container w-full mx-auto mb-8 text-center contact-heading">
       <h3 class="text-customPurple font-semibold text-3xl uppercase ">
         CONTACT
       </h3>
       <p class="capitalize text-lg font-medium">Get in Touch</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="bg-gray-50 p-5 shadow">
+      <div class="bg-gray-50 p-5 shadow contact-details">
         <h2 class="text-2xl mt-2" >
           Feel free to reach out to me
           <i class="fas fa-hands-helping text-customPurple"></i>
@@ -696,7 +696,7 @@
 
         <!-- Email -->
         <div class="email mt-5">
-          <h5 class="mb-1">
+          <h5 class="mb-1 font-medium">
             <i class="fas fa-envelope-open-text text-customOrange"></i>&nbsp;
             Email
           </h5>
@@ -710,7 +710,7 @@
 
         <!-- Phone -->
         <div class="phone mt-4">
-          <h5 class="mb-1">
+          <h5 class="mb-1 font-medium">
             <i class="fas fa-phone rotate-90 text-customOrange"></i>&nbsp;
             Phone
           </h5>
@@ -724,7 +724,7 @@
 
         <!-- Address -->
         <div class="address mt-4">
-          <h5 class="mb-1">
+          <h5 class="mb-1 font-medium">
             <i class="fas fa-map-marker-alt text-customOrange"></i>&nbsp;
             Address
           </h5>
@@ -735,7 +735,7 @@
 
         <!-- Social Media -->
         <div class="social mt-5 ml-6">
-          <h5 class="mb-2">
+          <h5 class="mb-2 font-medium">
             Social Links
           </h5>
           <div class="flex space-x-3">
@@ -755,7 +755,7 @@
         </div>
       </div>
 
-      <div class="bg-gray-50 py-5 shadow">
+      <div class="bg-gray-50 py-5 shadow contact-form">
         <form action="" method="post" class="w-full xs:w-11/12 mx-auto p-2 sm:p-4 gap-4">
           <input type="text" name="name"
             class="form-control px-3 ring-2 ring-gray-400 focus:ring-customOrange transition-all "
@@ -789,16 +789,16 @@
       <a href="" class="hover:underline font-medium">AdexFlow</a>. All Rights Reserved.
     </span>
     <ul class=" w-fit mx-auto md:mx-0 text-center md:flex md:flex-row space-y-3 md:space-y-0  mt-4 md:mt-0 text-sm text-gray-700 font-medium ">
-      <li>
+      <li class="footer-link">
         <a href="#about" class=" hover:underline md:mr-6 ">About</a>
       </li>
-      <li>
+      <li class="footer-link">
         <a href="#services" class=" hover:underline md:mr-6">Services</a>
       </li>
-      <li>
+      <li class="footer-link">
         <a href="#portfolio" class="hover:underline md:mr-6">Portfolio</a>
       </li>
-      <li>
+      <li class="footer-link">
         <a href="#contact" class="hover:underline">Contact</a>
       </li>
     </ul>
@@ -811,6 +811,7 @@
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/jquery.animatedheadline.min.js"></script>
+  <script src="js/scrollreveal.js"></script>
   <script src="js/script.js"></script>
 </body>
 

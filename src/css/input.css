@@ -7,6 +7,9 @@
   --customPurple: #2E186A;
 }
 
+html.sr .load-hidden {
+  visibility: hidden;
+}
 
 /* ::-webkit-scrollbar {
   width: 10px;
@@ -100,7 +103,7 @@ li , input, textarea{
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 400px) {
   #home {
     height: 75vh;
   }
@@ -160,7 +163,7 @@ li , input, textarea{
   border-radius: 10px;
   background-position: center;
   /* background-position: center;   */
-  background-image: url("../img/african-man-black-suit.jpg");
+  background-image: url("../img/IMG_0529_auto_x2_colored_toned_light_ai.png");
 }
 
 @media screen and (max-width: 992px) {
