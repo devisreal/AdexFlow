@@ -76,32 +76,32 @@ if (
 }
 
 //ScrollReveal
-window.sr = ScrollReveal({
+window.sr = ScrollReveal({  
   easing: "cubic-bezier(0.5, 0, 0, 1)",
-  interval: 16,
+  // interval: 16,
 });
 
 sr.reveal(".about-img, .contact-details", {
-  distance: "100px",
-  duration: 1000,
+  distance: "50px",
+  duration: 700,
   origin: "bottom",
   scale: 0.75,
   opacity: 0,
 });
 
 sr.reveal(".about-tabs, .jumbo.right, .contact-form", {
-  distance: "100px",
-  duration: 1000,
-  origin: "right",
+  distance: "50px",
+  duration: 700,
+  origin: "bottom",
   scale: 0.75,
   opacity: 0,
   delay: 500,
 });
 
 sr.reveal(".jumbo.left", {
-  distance: "100px",
+  distance: "50px",
   duration: 1000,
-  origin: "left",
+  origin: "bottom",
   scale: 0.75,
   opacity: 0,
   delay: 500,
@@ -109,20 +109,20 @@ sr.reveal(".jumbo.left", {
 
 // Scrollreveal headings
 sr.reveal(".service-heading, .portfolio-heading, .contact-heading", {
-  distance: "100px",
-  duration: 1000,
+  distance: "50px",
+  duration: 700,
   origin: "bottom",
   scale: 0.75,
   opacity: 0,
-  delay: 500,
+  // delay: 500,
 });
 
 // Scrollreveal Triple Containers
 // left
 sr.reveal(".service-box.left, .portfolio-box.left", {
-  distance: "100px",
-  duration: 1000,
-  origin: "left",
+  distance: "70px",
+  duration: 800,
+  origin: "bottom",
   scale: 0.75,
   opacity: 0,
   delay: 300,
@@ -130,9 +130,9 @@ sr.reveal(".service-box.left, .portfolio-box.left", {
 
 // center
 sr.reveal(".service-box.center, .portfolio-box.center", {
-  distance: "100px",
-  duration: 1000,
-  origin: "top",
+  distance: "70px",
+  duration: 800,
+  origin: "bottom",
   scale: 0.75,
   opacity: 0,
   delay: 700,
@@ -140,9 +140,9 @@ sr.reveal(".service-box.center, .portfolio-box.center", {
 
 // right
 sr.reveal(".service-box.right, .portfolio-box.right", {
-  distance: "100px",
-  duration: 1000,
-  origin: "right",
+  distance: "70px",
+  duration: 800,
+  origin: "bottom",
   scale: 0.75,
   opacity: 0,
   delay: 1000,
@@ -151,8 +151,8 @@ sr.reveal(".service-box.right, .portfolio-box.right", {
 // Footer
 sr.reveal(".footer-link", {
   interval: 30,
-  duration: 1200,
-  origin: "bottom",
+  duration: 900,
+  origin: "left",
   scale: 0.75,
   opacity: 0,
 });
