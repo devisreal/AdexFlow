@@ -11,21 +11,21 @@ html.sr .load-hidden {
   visibility: hidden;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 10px;
-} */
+}
 
-/* ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: #f1f1f1;
-} */
-/* 
+}
+
 ::-webkit-scrollbar-thumb {
   background: rgba(109, 84, 199, 0.5);
-} */
+}
 
-/* ::-webkit-scrollbar-thumb:hover {
-  @apply bg-customPurple;
-} */
+::-webkit-scrollbar-thumb:hover {
+  background:  rgba(109, 84, 199, 0.9);
+}
 
 h1,
 h2,

@@ -4045,7 +4045,7 @@ reference element's position.
   var tabs_Default = {
     defaultTabId: null,
     activeClasses:
-      "text-customPurple hover:text-customPurple dark:text-customPurple dark:hover:text-customPurple border-gray-400 dark:border-gray-400",
+      "text-customPurple hover:text-customPurple dark:text-customPurple dark:hover:text-customPurple border-gray-400 dark:border-gray-400 font-semibold",
     inactiveClasses:
       "text-gray-500 hover:text-gray-500 dark:text-gray-400 border-white hover:border-gray-300 dark:border-white dark:hover:text-gray-500",
     onShow: function onShow() {},
