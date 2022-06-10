@@ -16,7 +16,8 @@ $(document).ready(function () {
 
 // ScrollSpy
 let sections = document.querySelectorAll("section");
-let navLinks = document.querySelectorAll("nav a");
+let sideNav = document.querySelectorAll("nav a.side-nav")
+let navLinks = document.querySelectorAll("nav a.top-nav");
 
 window.onscroll = () => {
   if (
@@ -31,13 +32,13 @@ window.onscroll = () => {
     let top = window.scrollY;
     let offset = section.offsetTop - 150;
     let height = section.offsetHeight;
-    let id = section.getAttribute("id");
+    let id = section.getAttribute("id");    
 
     if (top >= offset && top < offset + height) {
       navLinks.forEach((link) => {
         link.classList.remove("active");
         document.querySelector(`nav a[href="#${id}"]`).classList.add("active");
-      });
+      });      
     }
   });
 };

@@ -20,11 +20,11 @@ html.sr .load-hidden {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(109, 84, 199, 0.5);
+  background: rgb(109, 84, 199);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background:  rgba(109, 84, 199, 0.9);
+  background:  rgba(109, 84, 199, 0.6);
 }
 
 h1,
@@ -60,7 +60,7 @@ li , input, textarea{
   @apply text-customPurple;
 }
 
-.side-nav.active {
+.side-nav.active, .side-nav.stay-active {
   @apply text-customPurple;
   font-weight: 600 !important;
 }
@@ -161,8 +161,7 @@ li , input, textarea{
   height: 82vh;
   background-size: cover;
   border-radius: 10px;
-  background-position: center;
-  /* background-position: center;   */
+  background-position: center;  
   background-image: url("../img/MrBabs.png");
 }
 
