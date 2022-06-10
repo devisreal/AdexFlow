@@ -89,7 +89,7 @@ sr.reveal(".about-img, .contact-details", {
   opacity: 0,
 });
 
-sr.reveal(".about-tabs, .jumbo.right, .contact-form", {
+sr.reveal(".jumbo.right, .contact-form", {
   distance: "50px",
   duration: 700,
   origin: "bottom",

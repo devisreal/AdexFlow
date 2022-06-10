@@ -52,7 +52,7 @@ li , input, textarea{
   font-family: "Baloo 2", cursive !important;  
 }
 
-.top-nav.active {
+.top-nav.active, .top-nav.stay-active {
   @apply border-b-2 border-b-customPurple  pb-1 text-customPurple;
 }
 
