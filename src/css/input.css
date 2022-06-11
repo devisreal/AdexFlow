@@ -97,7 +97,7 @@ li , input, textarea{
   }
 }
 
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
   #home {
     height: 75vh;
   }
@@ -107,7 +107,7 @@ li , input, textarea{
   #home {
     height: 75vh;
   }
-}
+} */
 
 #home {
   background-repeat: no-repeat;
@@ -188,8 +188,7 @@ form input[type=text], input[type=email]{
 .form-control {
   border: none;
   outline: none !important;
-  background-color: #fff;
-  color: #333;  
+  background-color: #fff;  
   border-radius: 5px;  
   font-weight: 600;  
   resize: none;
