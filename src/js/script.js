@@ -16,7 +16,7 @@ $(document).ready(function () {
 
 // ScrollSpy
 let sections = document.querySelectorAll("section");
-let sideNav = document.querySelectorAll("nav a.side-nav")
+let sideNav = document.querySelectorAll("nav a.side-nav");
 let navLinks = document.querySelectorAll("nav a.top-nav");
 
 window.onscroll = () => {
@@ -32,13 +32,13 @@ window.onscroll = () => {
     let top = window.scrollY;
     let offset = section.offsetTop - 150;
     let height = section.offsetHeight;
-    let id = section.getAttribute("id");    
+    let id = section.getAttribute("id");
 
     if (top >= offset && top < offset + height) {
       navLinks.forEach((link) => {
         link.classList.remove("active");
         document.querySelector(`nav a[href="#${id}"]`).classList.add("active");
-      });      
+      });
     }
   });
 };
@@ -77,7 +77,7 @@ if (
 }
 
 //ScrollReveal
-window.sr = ScrollReveal({  
+window.sr = ScrollReveal({
   easing: "cubic-bezier(0.5, 0, 0, 1)",
   // interval: 16,
 });

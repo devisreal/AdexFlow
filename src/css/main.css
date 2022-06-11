@@ -833,10 +833,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 20rem;
 }
 
-.max-w-sm {
-  max-width: 24rem;
-}
-
 .max-w-screen-md {
   max-width: 768px;
 }
@@ -1133,6 +1129,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
 .bg-customOrange {
@@ -1480,13 +1481,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-:root{
-  --customOrange: #F95700;
-  --customPurple: #2E186A;
-}
-
-html.sr .load-hidden {
-  visibility: hidden;
+:root {
+  --customOrange: #f95700;
+  --customPurple: #2e186a;
 }
 
 ::-webkit-scrollbar {
@@ -1502,7 +1499,7 @@ html.sr .load-hidden {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background:  rgba(109, 84, 199, 0.6);
+  background: rgba(109, 84, 199, 0.6);
 }
 
 h1,
@@ -1512,21 +1509,24 @@ h4,
 h5,
 a,
 button,
-#myTab li , label{
+#myTab li,
+label {
   font-family: "Poppins", sans-serif;
 }
 
 p,
 h6,
-li , input, textarea{
+li,
+input,
+textarea {
   font-family: "Baloo 2", cursive;
 }
 
-.font-poppins{
+.font-poppins {
   font-family: "Poppins", sans-serif !important;
 }
 
-.font-baloo{
+.font-baloo {
   font-family: "Baloo 2", cursive !important;
 }
 
@@ -1621,6 +1621,7 @@ li , input, textarea{
   background-color: #fff;
   padding: 8px 15px;
   border-radius: 7px;
+  border: 1px solid white;
   box-shadow: rgba(17, 17, 26, 0.4) 2px 2px 2px;
 }
 
@@ -1666,29 +1667,31 @@ li , input, textarea{
   }
 }
 
-form{
+form {
   display: grid;
 }
 
-form input::-moz-placeholder, textarea::-moz-placeholder{
+form input::-moz-placeholder, textarea::-moz-placeholder {
   font-family: poppins;
   font-size: 14px;
   font-weight: 400;
 }
 
-form input:-ms-input-placeholder, textarea:-ms-input-placeholder{
+form input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-family: poppins;
   font-size: 14px;
   font-weight: 400;
 }
 
-form input::placeholder, textarea::placeholder{
+form input::placeholder,
+textarea::placeholder {
   font-family: poppins;
   font-size: 14px;
   font-weight: 400;
 }
 
-form input[type=text], input[type=email]{
+form input[type="text"],
+input[type="email"] {
   height: 45px;
 }
 
@@ -1701,7 +1704,7 @@ form input[type=text], input[type=email]{
   resize: none;
 }
 
-#birthday-toast{
+#birthday-toast {
   display: none;
 }
 
@@ -1835,21 +1838,6 @@ form input[type=text], input[type=email]{
 
 .focus\:placeholder\:font-medium:focus::placeholder {
   font-weight: 500;
-}
-
-.focus\:placeholder\:text-black:focus::-moz-placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.focus\:placeholder\:text-black:focus:-ms-input-placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.focus\:placeholder\:text-black:focus::placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .focus\:placeholder\:text-gray-700:focus::-moz-placeholder {
@@ -2199,5 +2187,3 @@ form input[type=text], input[type=email]{
     padding-bottom: 1.5rem;
   }
 }
-
-
