@@ -76,6 +76,33 @@ if (
   birthdayToast.style.display = "none";
 }
 
+// Contact Form
+const sendBtn = document.getElementById("send-button");
+const form = document.getElementById("form");
+const btnValue = document.getElementById("btn-value");
+const formAlert = document.getElementById("form-alert");
+const closeAlert = document.getElementById("close-form-alert");
+sendBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  btnValue.innerHTML = "Submitting ...";
+  const serviceID = "default_service";
+  const templateID = "template_s0q3ebs";
+
+  emailjs.sendForm(serviceID, templateID, form).then(
+    () => {
+      btnValue.innerHTML = "Submit Form";
+      formAlert.style.display = "flex";
+      closeAlert.onclick = function () {
+        window.location.reload(true);
+      };
+    },
+    (err) => {
+      btnValue.innerHTML = "Submit Form";
+      alert(JSON.stringify(err));
+    }
+  );
+});
+
 //ScrollReveal
 window.sr = ScrollReveal({
   easing: "cubic-bezier(0.5, 0, 0, 1)",
